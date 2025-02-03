@@ -1,0 +1,114 @@
+:root {
+    --white: #fff;
+    --bg-morado: #6633CC;
+    --fucsia: #FE2A9F;
+    --blue-dark: #003399;
+    --lila: #E0DEFE;
+    --bg-lila: #e0defe;
+  }
+  
+
+@font-face {
+  font-family: heligthon;
+  src: url("font/Heligthon.otf");
+}
+
+@font-face {
+  font-family: pangram-black;
+  src: url("font/Pangram-Black.otf");
+}
+@font-face {
+  font-family: pangram-bold;
+  src: url("font/Pangram-Bold.otf");
+}
+@font-face {
+  font-family: pangram-extrabold;
+  src: url("font/Pangram-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: pangram-extralight;
+  src: url("font/Pangram-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: pangram-light;
+  src: url("font/Pangram-Light.otf");
+}
+
+@font-face {
+  font-family: pangram-medium;
+  src: url("font/Pangram-Medium.otf");
+}
+
+@font-face {
+  font-family: pangram-regular;
+  src: url("font/Pangram-Regular.otf");
+}
+
+.fuente-heligthon {
+  font-family: heligthon;
+
+}
+.fuente-pangram-black {
+  font-family: pangram-black;
+}
+.fuente-pangram-bold {
+  font-family: pangram-bold;
+}
+.fuente-pangram-extrabold {
+  font-family: pangram-extrabold;
+}
+.fuente-pangram-extralight {
+  font-family: pangram-extralight;
+}
+.fuente-pangram-light {
+  font-family: pangram-light;
+}
+.fuente-pangram-medium {
+  font-family: pangram-medium;
+}
+.fuente-pangram-regular {
+  font-family: pangram-regular;
+}
+
+.fondo-principal {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-principal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/fondo1.webp");
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 0.7; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.fondo-trazos {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-trazos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/patron.png");
+  background-color: var(--bg-lila);
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 0.4; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
