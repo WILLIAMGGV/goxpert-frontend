@@ -116,3 +116,102 @@
 .text-shadow-2xl {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
+
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Elimina el estilo predeterminado en WebKit */
+  width: 100%; /* Ancho del slider */
+  height: 3px; /* Altura de la pista del slider */
+  border-radius: 5px;  
+  background: var(--fucsia); /* Color de la pista */
+  outline: none; /* Sin contorno */
+  opacity: 0.7; /* Opacidad */
+  transition: opacity .2s; /* Transición suave */
+}
+
+.slider:hover {
+  -webkit-appearance: none;
+  -webkit-transition: .5s;
+  transition: opacity .5s;
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+
+
+
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Elimina el estilo predeterminado */
+  appearance: none; /* Elimina el estilo predeterminado */
+  width: 65px; /* Ancho del thumb */
+  height: 65px; /* Altura del thumb */
+  border-radius: 50%; /* Hace que el thumb sea redondo */
+  background-image: url('../img/right-arrow.svg');
+  cursor: pointer; /* Cambia el cursor al pasar sobre el thumb */
+  background-color: var(--lila);
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  -webkit-appearance: none;
+  
+  background-color: var(--bg-morado);
+  -webkit-transition: 2.5s;
+  transition: opacity 2.5s;
+  animation-name: show;
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+
+/* SCROLL horizontal*/
+
+.scrolling-container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scrolling-card2 {
+  flex: 0 0 auto;
+  border-radius: 10px;
+  margin: 10px;
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--lila);
+  color: var(--bg-morado);
+ 
+  animation-name: show;
+
+}
+
+.scrolling-container2::-webkit-scrollbar {
+  display: none;
+  
+}
+
+.scrolling-buttons-container2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+@keyframes show {
+ 
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
