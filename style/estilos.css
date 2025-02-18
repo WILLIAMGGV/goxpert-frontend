@@ -365,3 +365,20 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
   z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
 }
+
+
+.video-container {
+  width: 375px; /* Ancho típico de un teléfono */
+  height: 667px; /* Alto típico de un teléfono */
+  border: 2px solid #000; /* Opcional: borde para visualizar el contenedor */
+  overflow: hidden; /* Oculta cualquier parte del video que sobresalga */
+  border-radius: 20px; /* Opcional: bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Opcional: sombra para dar efecto de profundidad */
+  margin: auto; /* Centra el contenedor en la página */
+}
+
+video {
+  width: 100%; /* Ajusta el video al ancho del contenedor */
+  height: 100%; /* Ajusta el video a la altura del contenedor */
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+}
