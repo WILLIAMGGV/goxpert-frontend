@@ -8,6 +8,9 @@
     --bg-lila-dark: #c2d2e0;
   }
   
+  html {
+    scroll-behavior: smooth; /* Aplica desplazamiento suave */
+}
 
 @font-face {
   font-family: heligthon;
@@ -47,6 +50,16 @@
   src: url("font/Pangram-Regular.otf");
 }
 
+@font-face {
+  font-family: alte-regular;
+  src: url("font/AlteRegular.ttf");
+}
+
+@font-face {
+  font-family: alte-bold;
+  src: url("font/AlteBold.ttf");
+}
+
 .fuente-heligthon {
   font-family: heligthon;
 
@@ -73,6 +86,14 @@
   font-family: pangram-regular;
 }
 
+.fuente-alte-regular {
+  font-family: alte-regular;
+}
+
+.fuente-alte-bold {
+  font-family: alte-bold;
+}
+
 .fondo-principal {
   position: relative; /* Necesario para posicionar el pseudo-elemento */
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
@@ -89,9 +110,30 @@
   background-image: url("../img/fondo1.webp");
   background-size: cover; /* Asegura que la imagen cubra todo el área */
   background-position: center; /* Centra la imagen */
-  opacity: 0.7; /* Opacidad de la imagen de fondo */
+  opacity: 0.4; /* Opacidad de la imagen de fondo */
   z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
 }
+
+.fondo-servicios {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-servicios::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/servicios-3.webp");
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 0.9; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
 
 .fondo-trazos {
   position: relative; /* Necesario para posicionar el pseudo-elemento */
@@ -114,6 +156,65 @@
   z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
 }
 
+
+.fondo-trazadas {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-trazadas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/fondo-trazadas.png");
+  background-color: var(--bg-lila);
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 0.05; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.mi-div {
+
+  border-bottom: 1px solid var(--bg-morado); /* Borde negro en la parte inferior */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+
+
+}
+
+.mi-div2 {
+
+  border-bottom: 1px solid black; /* Borde negro en la parte inferior */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+
+
+}
+
+
+.fondo-footer {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/fondo-footer.webp");
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
 .text-shadow-2xl {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
@@ -128,7 +229,7 @@
   -webkit-appearance: none; /* Elimina el estilo predeterminado en WebKit */
   width: 100%; /* Ancho del slider */
   height: 1px; /* Altura de la pista del slider */
-  border-radius: 5px;  
+  border-radius: 40px;  
   background: var(--fucsia); /* Color de la pista */
   outline: none; /* Sin contorno */
   opacity: 0.7; /* Opacidad */
@@ -152,7 +253,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 65px; /* Ancho del thumb */
   height: 65px; /* Altura del thumb */
   border-radius: 50%; /* Hace que el thumb sea redondo */
-  background-image: url('../img/right-arrow.svg');
+  background-image: url('../img/flechav.png');
   cursor: pointer; /* Cambia el cursor al pasar sobre el thumb */
   background-color: var(--lila);
 }
@@ -381,4 +482,109 @@ video {
   width: 100%; /* Ajusta el video al ancho del contenedor */
   height: 100%; /* Ajusta el video a la altura del contenedor */
   object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+}
+
+
+.animated-image {
+  position: absolute;
+  top: 0; /* Comienza desde la parte superior */
+  animation: moveUpDown 5s ease-in-out infinite; /* Llama a la animación */
+}
+
+@keyframes moveUpDown {
+  0% {
+      top: 0; /* Comienza en la parte superior */
+  }
+  50% {
+      top: calc(30% - 200px); /* Baja hasta la parte inferior (altura del contenedor - altura de la imagen) */
+  }
+  100% {
+      top: 0; /* Regresa a la parte superior */
+  }
+}
+
+.animated-image2 {
+  position: absolute;
+  top: 0; /* Comienza desde la parte superior */
+  animation: moveUpDown2 8s ease-in-out infinite; /* Llama a la animación */
+}
+
+@keyframes moveUpDown2 {
+  0% {
+      top: -400px; /* Comienza en la parte superior */
+  }
+  50% {
+      top: calc(20% - 200px); /* Baja hasta la parte inferior (altura del contenedor - altura de la imagen) */
+  }
+  100% {
+      top: -400px; /* Regresa a la parte superior */
+  }
+}
+
+
+.scaling-image {
+  width: 200px; /* Ancho inicial de la imagen */
+  animation: scaleAnimation 2s ease-in-out infinite; /* Llama a la animación */
+}
+
+@keyframes scaleAnimation {
+  0% {
+      transform: scale(1); /* Tamaño original */
+  }
+  50% {
+      transform: scale(1.1); /* Aumenta el tamaño al 120% */
+      right: 10px;
+  }
+  100% {
+      transform: scale(1); /* Regresa al tamaño original */
+  }
+}
+
+
+.text-container {
+
+  transition: transform 0.3s ease; /* Transición suave para el efecto de crecimiento */
+}
+
+.text-container:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% al pasar el mouse */
+}
+
+
+.moving-box {
+
+  animation: moveLeftRight 6s linear infinite; /* Llama a la animación */
+}
+
+@keyframes moveLeftRight {
+  0% {
+      transform: translateX(0); /* Comienza en la posición original */
+  }
+  50% {
+      transform: translateX(100px); /* Se mueve a la derecha hasta el ancho de la ventana */
+  }
+  100% {
+      transform: translateX(0); /* Regresa a la posición original */
+  }
+}
+
+
+.hover-border {
+  border-bottom: 4px solid transparent; /* Borde transparente por defecto */
+  transition: border-color 0.3s; /* Transición suave */
+}
+.hover-border:hover {
+  border-color: #D5006D; /* Color fucsia al pasar el mouse */
+  cursor: pointer;
+}
+.hover-border:hover img {
+  transform: scale(50); /* Aumenta el tamaño de la imagen a 50px */
+  translate: 20px;
+}
+
+
+.truncate {
+  overflow: hidden;          /* Oculta el contenido que desborda */
+  white-space: nowrap;      /* Evita que el texto se divida en varias líneas */
+  text-overflow: ellipsis;  /* Muestra puntos suspensivos (...) al final */
 }
