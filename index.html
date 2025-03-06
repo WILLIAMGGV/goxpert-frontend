@@ -17,17 +17,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <div class="relative m-0 fondo-principal w-full mi-div2">
-      <!-- <video
-        class="absolute z-0 w-auto min-w-full min-h-full max-w-none"
-        autoplay
-        muted
-        loop
-      >
-        <source src="img/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> -->
-
+    <div class="relative m-0 w-full mi-div2">
       <div
         class="relative mi-div bg-white z-10 m-0 flex flex-row place-content-between p-4"
       >
@@ -84,7 +74,7 @@
           >
         </div>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div
         class="relative z-10 mt-10 flex flex-col place-content-center items-center justify-center"
       >
@@ -121,8 +111,31 @@
           PROTEGE
         </div>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
     </div>
+
+    <div
+      style="position: relative; width: 100%; height: 100vh; overflow: hidden"
+    >
+      <video
+        class="z-0"
+        autoplay
+        muted
+        loop
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        "
+      >
+        <source src="img/videos/animacion.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
     <!-- SECTION SERVICES -->
     <div class="relative">
       <img
