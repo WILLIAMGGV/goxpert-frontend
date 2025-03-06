@@ -309,8 +309,8 @@
 
 .mi-div {
 
-  border-bottom: 1px solid var(--bg-morado); /* Borde negro en la parte inferior */
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+  border-bottom: 1px solid var(--fucsia); /* Borde negro en la parte inferior */
+  box-shadow: 0 1px 5px var(--fucsia); /* Sombra */
 
 
 }

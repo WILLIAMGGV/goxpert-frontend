@@ -17,9 +17,11 @@
   </head>
   <body>
     <!-- HEADER -->
-    <div class="relative m-0 w-full mi-div2">
+    <div
+      style="position: relative; width: 100%; height: 100vh; overflow: hidden"
+    >
       <div
-        class="relative mi-div bg-white z-10 m-0 flex flex-row place-content-between p-4"
+        class="absolute mi-div w-full z-10 m-0 flex flex-row place-content-between p-4"
       >
         <div>
           <a href="/"><img src="img/go-xpert.png" width="300px" alt="" /></a>
@@ -74,6 +76,25 @@
           >
         </div>
       </div>
+      <video
+        class="z-0"
+        autoplay
+        muted
+        loop
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        "
+      >
+        <source src="img/videos/animacion.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="relative m-0 w-full mi-div2">
       <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div
         class="relative z-10 mt-10 flex flex-col place-content-center items-center justify-center"
@@ -112,28 +133,6 @@
         </div>
       </div>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
-    </div>
-
-    <div
-      style="position: relative; width: 100%; height: 100vh; overflow: hidden"
-    >
-      <video
-        class="z-0"
-        autoplay
-        muted
-        loop
-        style="
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        "
-      >
-        <source src="img/videos/animacion.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
     </div>
 
     <!-- SECTION SERVICES -->
@@ -473,233 +472,238 @@
     <!-- SECTION FORM CONTACT -->
 
     <!-- SECTION TESTIMONIALS -->
-    <div
-      id="testimonios"
-      class="m-0 bg-[var(--bg-lila)] w-full flex flex-col place-content-center"
-    >
-      <br /><br /><br />
-      <br />
-      <div class="relative">
-        <div
-          class="absolute w-[60%] h-[140px] bg-[var(--fucsia)] mi-div2 rounded-r-[40px]"
-        ></div>
-        <div
-          class="absolute ml-16 mt-[0px] fuente-pangram-extrabold text-[90px] text-white"
-          style="text-shadow: 4px 2px 4px var(--bg-morado); letter-spacing: 4px"
-        >
-          TESTIMONIOS
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 mt-[110px] gap-2 place-content-center p-4">
-        <div
-          class="flex flex-col place-content-center items-center justify-center"
-        >
-          <div class="m-4 w-full p-6">
-            <div class="video-container">
-              <video controls>
-                <source src="img/videos/test-carolina.MP4" type="video/mp4" />
-                Tu navegador no soporta el elemento de video.
-              </video>
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex flex-col place-content-center items-center justify-center"
-        >
-          <div class="m-4 w-full p-6">
-            <div class="video-container">
-              <video controls>
-                <source src="img/videos/test-pamela.mp4" type="video/mp4" />
-                Tu navegador no soporta el elemento de video.
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br /><br /><br />
-    </div>
-
-    <!-- SECTION FORM CONTACT -->
-    <div id="contact" class="bg-white">
-      <br />
-      <div class="flex flex-col ml-10" style="line-height: 1.1"></div>
-      <br /><br /><br />
+    <div class="fondo-degradado">
       <div
-        class="flex flex-row place-content-center fuente-heligthon text-[var(--bg-morado)] text-[96px]"
+        id="testimonios"
+        class="m-0 w-full flex flex-col place-content-center"
       >
-        ¡Tu productividad
-      </div>
-      <div
-        class="mt-[-40px] flex flex-row place-content-center fuente-pangram-bold text-[var(--fucsia)] text-[56px]"
-      >
-        está a un clic de distancia!
-      </div>
-      <br />
-      <br />
-
-      <br />
-      <br />
-      <br />
-
-      <div>
-        <div
-          class="flex flex-col place-content-center justify-center items-center"
-        >
+        <br /><br /><br />
+        <br />
+        <div class="relative">
           <div
-            class="w-[95%] text-center bg-[var(--bg-lila)] rounded-[60px] flex flex-col place-content-center justify-center items-center"
-            style="z-index: 1"
+            class="absolute w-[60%] h-[140px] bg-[var(--fucsia)] mi-div2 rounded-r-[40px]"
+          ></div>
+          <div
+            class="absolute ml-16 mt-[0px] fuente-pangram-extrabold text-[90px] text-white"
+            style="
+              text-shadow: 4px 2px 4px var(--bg-morado);
+              letter-spacing: 4px;
+            "
+          >
+            TESTIMONIOS
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 mt-[110px] gap-2 place-content-center p-4">
+          <div
+            class="flex flex-col place-content-center items-center justify-center"
+          >
+            <div class="m-4 w-full p-6">
+              <div class="video-container">
+                <video controls>
+                  <source src="img/videos/test-carolina.MP4" type="video/mp4" />
+                  Tu navegador no soporta el elemento de video.
+                </video>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col place-content-center items-center justify-center"
+          >
+            <div class="m-4 w-full p-6">
+              <div class="video-container">
+                <video controls>
+                  <source src="img/videos/test-pamela.mp4" type="video/mp4" />
+                  Tu navegador no soporta el elemento de video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br /><br /><br />
+      </div>
+
+      <!-- SECTION FORM CONTACT -->
+      <div id="contact" class="">
+        <br />
+        <div class="flex flex-col ml-10" style="line-height: 1.1"></div>
+        <br /><br /><br />
+        <div
+          class="flex flex-row place-content-center fuente-heligthon text-[var(--bg-morado)] text-[96px]"
+        >
+          ¡Tu productividad
+        </div>
+        <div
+          class="mt-[-40px] flex flex-row place-content-center fuente-pangram-bold text-[var(--fucsia)] text-[56px]"
+        >
+          está a un clic de distancia!
+        </div>
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+
+        <div>
+          <div
+            class="flex flex-col place-content-center justify-center items-center"
           >
             <div
-              class="ml-4 mt-[-120px] fuente-pangram-extrabold text-[120px] text-[var(--bg-morado)]"
-              style="text-shadow: 4px 2px 4px var(--bg-morado); z-index: 10"
-              data-aos="zoom-out"
-              data-aos-duration="2000"
-              aria-hidden="true"
-            >
-              CONTÁCTANOS
-            </div>
-
-            <div
-              class="flex flex-row w-[90%] place-content-center justify-center items-center"
+              class="w-[95%] text-center bg-[var(--bg-lila)] rounded-[60px] flex flex-col place-content-center justify-center items-center"
+              style="z-index: 1"
             >
               <div
-                class="bg-white rounded-full w-[60px] h-[60px] m-4 flex flex-row place-content-center justify-center items-center"
-                data-aos="zoom-out"
-                data-aos-duration="1000"
-                aria-hidden="true"
-              >
-                <svg
-                  class="w-[40px] h-[40px] text-[var(--fucsia)]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div class="m-4 ml-10 w-[70%]">
-                <input
-                  type="text"
-                  id="first_name"
-                  class="bg-gray-50 h-[60px] text-[var(--blue-dark)] text-[24px] pl-8 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                  placeholder="John"
-                  required
-                />
-              </div>
-            </div>
-
-            <div
-              class="flex flex-row w-[90%] place-content-center justify-center items-center"
-            >
-              <div
-                class="bg-white rounded-full w-[60px] h-[60px] m-4 flex flex-row place-content-center justify-center items-center"
+                class="ml-4 mt-[-120px] fuente-pangram-extrabold text-[120px] text-[var(--bg-morado)]"
+                style="text-shadow: 4px 2px 4px var(--bg-morado); z-index: 10"
                 data-aos="zoom-out"
                 data-aos-duration="2000"
                 aria-hidden="true"
               >
-                <svg
-                  class="w-[40px] h-[40px] text-[var(--fucsia)]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"
-                  />
-                  <path
-                    d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"
-                  />
-                </svg>
+                CONTÁCTANOS
               </div>
-              <div class="m-4 ml-10 w-[70%]">
-                <input
-                  type="text"
-                  id="email"
-                  class="bg-gray-50 h-[60px] text-[var(--blue-dark)] text-[24px] pl-8 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                  placeholder="John@gmail.com"
-                  required
-                />
-              </div>
-            </div>
 
-            <div
-              class="flex flex-row w-[90%] place-content-center justify-center items-center"
-            >
               <div
-                class="bg-white rounded-full w-[60px] h-[60px] m-4 flex flex-row place-content-center justify-center items-center"
-                data-aos="zoom-out"
-                data-aos-duration="3000"
-                aria-hidden="true"
+                class="flex flex-row w-[90%] place-content-center justify-center items-center"
               >
-                <svg
-                  class="w-[40px] h-[40px] text-[var(--fucsia)]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z"
-                  />
-                </svg>
-              </div>
-              <div class="m-4 ml-10 w-[70%]">
-                <input
-                  type="text"
-                  id="phone"
-                  class="bg-gray-50 h-[60px] text-[var(--blue-dark)] text-[24px] pl-8 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                  placeholder="Telephone"
-                  required
-                />
-              </div>
-            </div>
-
-            <div
-              class="flex flex-row w-[90%] place-content-center justify-center items-start"
-            >
-              <div
-                class="rounded-full w-[60px] h-[60px] m-4 flex flex-row place-content-center justify-center items-center"
-              >
-                &nbsp;
-              </div>
-              <div
-                class="m-4 ml-10 w-[70%] flex flex-col place-content-center justify-center items-center"
-              >
-                <textarea
-                  id="message"
-                  rows="4"
-                  class="block p-2.5 pl-8 w-full text-[24px] text-gray-900 bg-gray-50 rounded-3xl border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Write your thoughts here..."
-                ></textarea>
                 <div
-                  class="ml-4 w-[30%] h-[50px] mt-4 fuente-pangram-bold p-2 pl-4 pr-4 rounded-[20px] text-white text-[24px] bg-[var(--fucsia)] hover:rounded-[20px] hover:font-bold hover:cursor-pointer hover:bg-[var(--bg-morado)]"
+                  class="bg-white rounded-full w-[60px] h-[60px] m-4 flex flex-row place-content-center justify-center items-center"
+                  data-aos="zoom-out"
+                  data-aos-duration="1000"
+                  aria-hidden="true"
                 >
-                  ENVIAR
+                  <svg
+                    class="w-[40px] h-[40px] text-[var(--fucsia)]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="m-4 ml-10 w-[70%]">
+                  <input
+                    type="text"
+                    id="first_name"
+                    class="bg-gray-50 h-[60px] text-[var(--blue-dark)] text-[24px] pl-8 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="John"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div
+                class="flex flex-row w-[90%] place-content-center justify-center items-center"
+              >
+                <div
+                  class="bg-white rounded-full w-[60px] h-[60px] m-4 flex flex-row place-content-center justify-center items-center"
+                  data-aos="zoom-out"
+                  data-aos-duration="2000"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-[40px] h-[40px] text-[var(--fucsia)]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"
+                    />
+                    <path
+                      d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"
+                    />
+                  </svg>
+                </div>
+                <div class="m-4 ml-10 w-[70%]">
+                  <input
+                    type="text"
+                    id="email"
+                    class="bg-gray-50 h-[60px] text-[var(--blue-dark)] text-[24px] pl-8 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="John@gmail.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div
+                class="flex flex-row w-[90%] place-content-center justify-center items-center"
+              >
+                <div
+                  class="bg-white rounded-full w-[60px] h-[60px] m-4 flex flex-row place-content-center justify-center items-center"
+                  data-aos="zoom-out"
+                  data-aos-duration="3000"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="w-[40px] h-[40px] text-[var(--fucsia)]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z"
+                    />
+                  </svg>
+                </div>
+                <div class="m-4 ml-10 w-[70%]">
+                  <input
+                    type="text"
+                    id="phone"
+                    class="bg-gray-50 h-[60px] text-[var(--blue-dark)] text-[24px] pl-8 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Telephone"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div
+                class="flex flex-row w-[90%] place-content-center justify-center items-start"
+              >
+                <div
+                  class="rounded-full w-[60px] h-[60px] m-4 flex flex-row place-content-center justify-center items-center"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="m-4 ml-10 w-[70%] flex flex-col place-content-center justify-center items-center"
+                >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="block p-2.5 pl-8 w-full text-[24px] text-gray-900 bg-gray-50 rounded-3xl border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Write your thoughts here..."
+                  ></textarea>
+                  <div
+                    class="ml-4 w-[30%] h-[50px] mt-4 fuente-pangram-bold p-2 pl-4 pr-4 rounded-[20px] text-white text-[24px] bg-[var(--fucsia)] hover:rounded-[20px] hover:font-bold hover:cursor-pointer hover:bg-[var(--bg-morado)]"
+                  >
+                    ENVIAR
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <br /><br />
       </div>
-      <br /><br />
-    </div>
 
-    <!-- <div class="container">
+      <!-- <div class="container">
       <div class="ball"></div>
     </div> -->
 
-    <!-- FOOTER -->
+      <!-- FOOTER -->
+    </div>
     <div
       class="m-0 fondo-footer w-full grid grid-cols-3 gap-3 place-content-center"
     >
