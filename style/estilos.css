@@ -114,6 +114,27 @@
   z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
 }
 
+.fondo-linea {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-linea::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/linea-curva.png");
+  background-size: auto; /* Cambia a auto para que la imagen mantenga su tamaño original */
+  background-repeat: repeat-x; /* Repite la imagen verticalmente */
+  background-position: right center;
+  opacity: 1; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
 .fondo-servicios {
   position: relative; /* Necesario para posicionar el pseudo-elemento */
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
@@ -153,6 +174,114 @@
   background-size: cover; /* Asegura que la imagen cubra todo el área */
   background-position: center; /* Centra la imagen */
   opacity: 0.4; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.fondo-service1 {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.fondo-service1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-image: url("../img/ilustraciones/service1.webp");
+  background-color: var(--bg-lila);
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 1; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.fondo-service2 {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.fondo-service2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-image: url("../img/ilustraciones/service2.webp");
+  background-color: var(--bg-lila);
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 1; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+
+.fondo-service3 {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.fondo-service3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-image: url("../img/ilustraciones/service3.webp");
+  background-color: var(--bg-lila);
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 1; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+
+.fondo-service5 {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.fondo-service5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-image: url("../img/ilustraciones/service5.webp");
+  background-color: var(--bg-lila);
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 1; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.fondo-degradado {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-degradado::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-image: url("../img/degradado-mas.png");
+
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 1; /* Opacidad de la imagen de fondo */
   z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
 }
 
@@ -287,6 +416,19 @@ input[type="range"]::-webkit-slider-thumb:hover {
   text-align: center;
   padding: 20px;
   background-color: var(--lila);
+  color: var(--bg-morado);
+ 
+  animation-name: show;
+
+}
+
+.scrolling-card3 {
+ 
+  border-radius: 50px;
+  margin: 10px;
+
+
+  background-color: var(--bg-morado);
   color: var(--bg-morado);
  
   animation-name: show;
