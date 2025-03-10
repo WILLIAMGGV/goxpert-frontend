@@ -119,17 +119,23 @@
     <!-- SECTION SERVICES -->
     <div
       class="fondo-servicios grid grid-cols-2 gap-2"
-      style="grid-template-columns: 45% 55%"
+      style="grid-template-columns: 40% 60%"
     >
       <div
-        class="flex flex-row place-content-center justify-center items-center p-16 w-[80%] text-center text-[24px] text-white"
+        class="flex flex-row place-content-center justify-center items-center"
       >
-        <span style="line-height: 2"
-          >Brindamos con nuestros servicios la flexibilidad, reducción de
-          costos, liberación de tareas operativas, acceso a talento global,
-          aumento de productividad y seguridad para optimizar tu tiempo y
-          recursos</span
+        <div
+          class="flex flex-col place-content-center p-16 w-[80%] text-left text-[26px] text-white"
         >
+          <span style="line-height: 2"
+            ><span class="text-[var(--verde-claro)] fuente-pangram-bold"
+              >Brindamos con nuestros servicios</span
+            >
+            la flexibilidad, reducción de costos, liberación de tareas
+            operativas, acceso a talento global, aumento de productividad y
+            seguridad para optimizar tu tiempo y recursos</span
+          >
+        </div>
       </div>
       <div class="flex flex-col p-8">
         <br />
@@ -144,7 +150,7 @@
               class="transition-transform duration-300 hover:scale-125"
             />
             <div class="flex flex-col hover:translate-x-12">
-              <span class="fuente-pangram-bold text-white text-[20px]">
+              <span class="fuente-pangram-bold text-white text-[26px]">
                 ASISTENTE VIRTUAL ADMINISTRATIVO
               </span>
               <span class="fuente-pangram-regular text-white truncate w-[100%]">
@@ -165,7 +171,7 @@
               class="transition-transform duration-300 hover:scale-125"
             />
             <div class="flex flex-col hover:translate-x-12">
-              <span class="fuente-pangram-bold text-white text-[20px]">
+              <span class="fuente-pangram-bold text-white text-[26px]">
                 ASISTENTE VIRTUAL PERSONAL
               </span>
               <span class="fuente-pangram-regular text-white truncate w-[100%]">
@@ -186,7 +192,7 @@
               class="transition-transform duration-300 hover:scale-125"
             />
             <div class="flex flex-col hover:translate-x-12">
-              <span class="fuente-pangram-bold text-white text-[20px]">
+              <span class="fuente-pangram-bold text-white text-[26px]">
                 ASISTENTE VIRTUAL VENTAS
               </span>
               <span class="fuente-pangram-regular text-white truncate w-[100%]">
@@ -207,7 +213,7 @@
             class="transition-transform duration-300 hover:scale-125"
           />
           <div class="flex flex-col hover:translate-x-12">
-            <span class="fuente-pangram-bold text-white text-[20px]">
+            <span class="fuente-pangram-bold text-white text-[26px]">
               ASISTENTE VIRTUAL PARA PROFESIONALES
             </span>
             <span class="fuente-pangram-regular text-white truncate w-[100%]">
@@ -227,7 +233,7 @@
             class="transition-transform duration-300 hover:scale-125"
           />
           <div class="flex flex-col hover:translate-x-12">
-            <span class="fuente-pangram-bold text-white text-[20px]">
+            <span class="fuente-pangram-bold text-white text-[26px]">
               ASISTENTE VIRTUAL E-COMMERCE
             </span>
             <span class="fuente-pangram-regular text-white truncate w-[100%]">
@@ -247,10 +253,12 @@
             class="transition-transform duration-300 hover:scale-125"
           />
           <div class="flex flex-col hover:translate-x-12">
-            <span class="fuente-pangram-bold text-white text-[20px]">
+            <span class="fuente-pangram-bold text-white text-[26px]">
               ASISTENTE VIRTUAL DE MARKETING DIGITAL
             </span>
-            <span class="fuente-pangram-regular text-white truncate w-[100%]">
+            <span
+              class="fuente-pangram-regular text-[var(--verde-claro)] truncate w-[100%]"
+            >
               Gestión de contenido hasta el análisis de datos, con el objetivo
               de aumentar la visibilidad en linea
             </span>
@@ -268,7 +276,7 @@
               class="transition-transform duration-300 hover:scale-125"
             />
             <div class="flex flex-col hover:translate-x-12">
-              <span class="fuente-pangram-bold text-white text-[20px]">
+              <span class="fuente-pangram-bold text-white text-[26px]">
                 ASISTENTE VIRTUAL DE ATENCIÓN AL CLIENTE
               </span>
               <span class="fuente-pangram-regular text-white truncate w-[100%]">
@@ -305,7 +313,7 @@
 
     <div class="fondo-linea scrolling-container2 ml-6 mr-6 mt-[-20px]">
       <div
-        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-center items-center justify-center"
+        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-start items-center justify-start"
       >
         <img
           class="background-image"
@@ -315,16 +323,17 @@
           style="bottom: 0; right: 0"
         />
         <div
-          class="font-bold fuente-pangram-bold mt-4 text-[20px] title-card text-[var(--fucsia)]"
+          class="font-bold fuente-pangram-bold mt-4 flex flex-row place-content-center justify-center items-center text-center text-[28px] title-card text-[var(--fucsia)]"
         >
-          FLEXIBILIDAD Y ESCALABILIDAD
+          FLEXIBILIDAD Y <br />
+          ESCALABILIDAD
         </div>
         <div></div>
         <br />
         <div
           align="justify"
           class="fuente-pangram-regular descripcion-card"
-          style="line-height: 1.2"
+          style="line-height: 1.05"
         >
           Permiten una flexibilidad sin precedentes en la gestión del personal.
           Puedes contratar según las necesidades específicas de tu proyecto o
@@ -345,16 +354,17 @@
           style="bottom: 0; right: 0"
         />
         <div
-          class="font-bold fuente-pangram-bold mt-4 text-[20px] title-card text-[var(--fucsia)]"
+          class="font-bold fuente-pangram-bold mt-4 text-[28px] title-card text-[var(--fucsia)]"
         >
-          REDUCCIÓN DE COSTOS
+          REDUCCIÓN DE <br />
+          COSTOS
         </div>
         <div></div>
         <br />
         <div
           align="justify"
           class="fuente-pangram-regular descripcion-card"
-          style="line-height: 1.2"
+          style="line-height: 1.05"
         >
           Al contratar nuestros Asistentes Virtuales, evitas los gastos
           asociados con la contratación de empleados a tiempo completo, como
@@ -366,7 +376,7 @@
       </div>
 
       <div
-        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-center items-center justify-center"
+        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-start items-center justify-start"
       >
         <img
           class="background-image"
@@ -376,16 +386,16 @@
           style="bottom: 0; right: 0"
         />
         <div
-          class="font-bold fuente-pangram-bold mt-4 text-[20px] title-card text-[var(--fucsia)]"
+          class="font-bold fuente-pangram-bold mt-4 text-[28px] title-card text-[var(--fucsia)]"
         >
-          LIBERACIÓN DE TAREAS OPERATIVAS
+          LIBERACIÓN DE <br />TAREAS OPERATIVAS
         </div>
         <div></div>
         <br />
         <div
           align="justify"
           class="fuente-pangram-regular descripcion-card"
-          style="line-height: 1.2"
+          style="line-height: 1.05"
         >
           Delegar tareas administrativas y rutinarias a nuestros Asistentes
           Virtuales te permite liberar tiempo valioso que puedes dedicar a
@@ -396,7 +406,7 @@
       </div>
 
       <div
-        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-center items-center justify-center"
+        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-start items-center justify-start"
       >
         <img
           class="background-image"
@@ -406,16 +416,16 @@
           style="bottom: 0; right: 0"
         />
         <div
-          class="font-bold fuente-pangram-bold mt-4 text-[20px] title-card text-[var(--fucsia)]"
+          class="font-bold fuente-pangram-bold mt-4 text-[28px] title-card text-[var(--fucsia)]"
         >
-          ACCESO A TALENTO GLOBAL
+          ACCESO A <br />TALENTO GLOBAL
         </div>
         <div></div>
         <br />
         <div
           align="justify"
           class="fuente-pangram-regular descripcion-card"
-          style="line-height: 1.2"
+          style="line-height: 1.05"
         >
           Al trabajar con nuestros Asistentes Virtuales tienes acceso a un
           talento diverso y altamente cualificado de todo el mundo. Puedes
@@ -426,7 +436,7 @@
       </div>
 
       <div
-        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-center items-center justify-center"
+        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-start items-center justify-start"
       >
         <img
           class="background-image"
@@ -436,16 +446,16 @@
           style="bottom: 0; right: 0"
         />
         <div
-          class="font-bold fuente-pangram-bold mt-4 text-[20px] title-card text-[var(--fucsia)]"
+          class="font-bold fuente-pangram-bold mt-4 text-[28px] title-card text-[var(--fucsia)]"
         >
-          AUMENTO DE LA PRODUCTIVIDAD
+          AUMENTO DE <br />LA PRODUCTIVIDAD
         </div>
         <div></div>
         <br />
         <div
           align="justify"
           class="fuente-pangram-regular descripcion-card"
-          style="line-height: 1.2"
+          style="line-height: 1.05"
         >
           Nuestros Asistentes Virtuales son expertos en optimizar procesos y
           maximizar la eficiencia. Al encargarse de tareas administrativas y
@@ -457,7 +467,7 @@
       </div>
 
       <div
-        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-center items-center justify-center"
+        class="scrolling-card2 rounded-[40px] w-[400px] p-8 text-[22px] h-[500px] relative container-services flex flex-col place-content-start items-center justify-start"
       >
         <img
           class="background-image"
@@ -467,16 +477,16 @@
           style="bottom: 0; right: 0"
         />
         <div
-          class="font-bold fuente-pangram-bold mt-4 text-[20px] title-card text-[var(--fucsia)]"
+          class="font-bold fuente-pangram-bold mt-4 text-[28px] title-card text-[var(--fucsia)]"
         >
-          SEGURIDAD Y CONFIDENCIALIDAD DE LA INFORMACIÓN
+          SEGURIDAD Y <br />CONFIDENCIALIDAD
         </div>
         <div></div>
         <br />
         <div
           align="justify"
           class="fuente-pangram-regular descripcion-card"
-          style="line-height: 1.2"
+          style="line-height: 1.05"
         >
           Contamos con un equipo de tecnologia e información que asegura tus
           datos a través de un sistema de monitoreo continuo.
