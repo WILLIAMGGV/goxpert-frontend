@@ -154,8 +154,24 @@
   background-position: center; /* Centra la imagen */
   opacity: 0.9; /* Opacidad de la imagen de fondo */
   z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+  transition: background-image 0.3s ease;
 }
 
+.fondo-servicios.hover1::before {
+  background-image: url("../img/ilustraciones/service1.webp"); /* Imagen al pasar el mouse */
+}
+
+.fondo-servicios.hover2::before {
+  background-image: url("../img/ilustraciones/service2.webp"); /* Imagen al pasar el mouse */
+}
+
+.fondo-servicios.hover3::before {
+  background-image: url("../img/ilustraciones/service3.webp"); /* Imagen al pasar el mouse */
+}
+
+.fondo-servicios.hover4::before {
+  background-image: url("../img/ilustraciones/service5.webp"); /* Imagen al pasar el mouse */
+}
 
 .fondo-trazos {
   position: relative; /* Necesario para posicionar el pseudo-elemento */

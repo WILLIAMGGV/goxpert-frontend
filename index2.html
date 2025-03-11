@@ -701,98 +701,119 @@
 
     <!-- FOOTER -->
     <div
-      class="m-0 bg-[var(--bg-morado)] w-full grid grid-cols-3 gap-3 place-content-center"
+      class="m-0 fondo-footer w-full grid grid-cols-3 gap-3 place-content-center"
     >
-      <div class="p-12 flex flex-row ml-10 container-logo">
-        <img
-          src="img/goxpert-short.png"
-          class="w-[90%] h-auto object-contain image-wrapper"
-          alt=""
-        />
+      <div
+        class="p-12 flex flex-col place-content-center justify-center items-center container-logo"
+      >
+        <br />
+        <a href="/"
+          ><img
+            src="img/goxpert-short.png"
+            5
+            class="w-[300px] object-contain image-wrapper"
+            alt=""
+          />
+        </a>
       </div>
-      <div class="flex flex-col place-content-start mt-8">
-        <span
-          class="fuente-pangram-regular text-[24px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
-          >NUESTROS SERVICIOS</span
+      <div class="flex flex-col place-content-start mt-16">
+        <a href="services.html"
+          ><span
+            class="fuente-pangram-regular text-[28px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
+            >NUESTROS SERVICIOS</span
+          ></a
         >
-        <span
-          class="mt-2 fuente-pangram-regular text-[24px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
-          >¿QUIÉNES SOMOS?</span
+        <a href="/#quienessomos"
+          ><span
+            class="mt-2 fuente-pangram-regular text-[28px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
+            >¿QUIÉNES SOMOS?</span
+          ></a
         >
-        <span
-          class="mt-2 fuente-pangram-regular text-[24px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
-          >TESTIMONIOS</span
+        <a href="/#testimonios">
+          <span
+            class="mt-2 fuente-pangram-regular text-[28px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
+            >TESTIMONIOS</span
+          ></a
         >
-        <span
-          class="mt-2 fuente-pangram-regular text-[24px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
-          >CONTACTO</span
+        <a href="#contact">
+          <span
+            class="mt-2 fuente-pangram-regular text-[28px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
+            >CONTACTO</span
+          ></a
         >
-        <a href="https://admin.goxpert.net" target="_blank">
-          <div
-            class="mt-2 w-[200px] fuente-pangram-regular p-2 pl-4 pr-4 rounded-[16px] text-white text-[24px] bg-[var(--fucsia)] hover:rounded-[16px] hover:font-bold hover:cursor-pointer hover:bg-[var(--blue-dark)]"
-          >
-            INICIAR SESIÓN
-          </div></a
+        <a href="politica.html">
+          <span
+            class="mt-2 fuente-pangram-regular text-[28px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
+            >POLÍTICA DE PRIVACIDAD</span
+          ></a
         >
       </div>
-      <div class="flex flex-col place-content-start mt-8">
+      <div
+        class="flex flex-col place-content-start justify-start items-start mt-16"
+      >
         <div class="flex flex-col h-full place-content-between">
           <div class="flex flex-col">
-            <span
-              class="fuente-pangram-regular text-[24px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
-              >POLÍTICA DE PRIVACIDAD</span
-            >
-            <span
-              class="mt-2 fuente-pangram-regular text-[24px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
-              >SOPORTE</span
-            >
-          </div>
-          <div class="mb-[50px]">
+            <a href="politica.html">
+              <span
+                class="fuente-pangram-regular text-[28px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
+                >SOPORTE</span
+              >
+            </a>
             <div
-              class="mt-2 fuente-pangram-regular text-[24px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
+              class="fuente-pangram-regular text-[28px] hover:text-shadow-2xl text-[#FFF] hover:font-bold hover:cursor-pointer"
             >
               SIGUENOS
             </div>
-            <div class="flex flex-row">
-              <span
-                class="bg-white w-[46px] h-[46px] rounded-full flex flex-row place-content-center justify-center items-center hover:bg-[var(--fucsia)] hover:cursor-pointer container-red"
+            <div class="flex flex-row mt-2">
+              <a
+                href="https://www.facebook.com/01.AsistenteVirtual/"
+                target="_blank"
               >
-                <svg
-                  class="w-[32px] h-[32px] text-[var(--bg-morado)] hover:text-white image-wrapper"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+                <span
+                  class="bg-white w-[46px] h-[46px] rounded-full flex flex-row place-content-center justify-center items-center hover:bg-[var(--fucsia)] hover:cursor-pointer container-red"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <span
-                class="ml-2 bg-white w-[46px] h-[46px] rounded-full flex flex-row place-content-center justify-center items-center hover:bg-[var(--fucsia)] hover:cursor-pointer container-red"
-              >
-                <svg
-                  class="w-[32px] h-[32px] text-[var(--bg-morado)] hover:text-white image-wrapper"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
+                  <svg
+                    class="w-[32px] h-[32px] text-[var(--bg-morado)] hover:text-white image-wrapper"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
                     fill="currentColor"
-                    fill-rule="evenodd"
-                    d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="https://www.instagram.com/go_xpert?igsh=MW1ldDFvM2ZubDc4cg%3D%3D&utm_source=qr"
+                target="_blank"
+              >
+                <span
+                  class="ml-2 bg-white w-[46px] h-[46px] rounded-full flex flex-row place-content-center justify-center items-center hover:bg-[var(--fucsia)] hover:cursor-pointer container-red"
+                >
+                  <svg
+                    class="w-[32px] h-[32px] text-[var(--bg-morado)] hover:text-white image-wrapper"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </a>
               <span
                 class="ml-2 bg-white w-[46px] h-[46px] rounded-full flex flex-row place-content-center justify-center items-center hover:bg-[var(--fucsia)] hover:cursor-pointer container-red"
               >
@@ -817,27 +838,39 @@
                   />
                 </svg>
               </span>
-              <span
-                class="ml-2 bg-white w-[46px] h-[46px] rounded-full flex flex-row place-content-center justify-center items-center hover:bg-[var(--fucsia)] hover:cursor-pointer container-red"
+              <a
+                href="https://www.linkedin.com/company/goxpert/?viewAsMember=true"
+                target="_blank"
               >
-                <svg
-                  class="w-[32px] h-[32px] text-[var(--bg-morado)] hover:text-white image-wrapper"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+                <span
+                  class="ml-2 bg-white w-[46px] h-[46px] rounded-full flex flex-row place-content-center justify-center items-center hover:bg-[var(--fucsia)] hover:cursor-pointer container-red"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
-                    clip-rule="evenodd"
-                  />
-                  <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
-                </svg>
-              </span>
+                  <svg
+                    class="w-[32px] h-[32px] text-[var(--bg-morado)] hover:text-white image-wrapper"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                      clip-rule="evenodd"
+                    />
+                    <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+                  </svg>
+                </span>
+              </a>
             </div>
+            <a href="https://admin.goxpert.net" class="mt-2" target="_blank">
+              <div
+                class="mt-2 w-[200px] text-center font-bold fuente-pangram-regular p-2 pl-4 pr-4 rounded-[16px] text-[var(--fucsia)] text-[24px] bg-white hover:rounded-[16px] hover:font-bold hover:text-white hover:cursor-pointer hover:bg-[var(--fucsia)]"
+              >
+                INICIAR SESIÓN
+              </div></a
+            >
           </div>
         </div>
       </div>
