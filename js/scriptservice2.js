@@ -160,3 +160,166 @@ menu7.addEventListener("mouseout", function () {
   div.classList.remove("hover7");
   div.classList.remove("hover4"); // Quita la clase para volver a la imagen inicial
 });
+
+const div2 = document.getElementById("fondoServicios2");
+const menu12 = document.getElementById("servicemenu12");
+const menu22 = document.getElementById("servicemenu22");
+const menu32 = document.getElementById("servicemenu32");
+const menu42 = document.getElementById("servicemenu42");
+const menu52 = document.getElementById("servicemenu52");
+const menu62 = document.getElementById("servicemenu62");
+const menu72 = document.getElementById("servicemenu72");
+
+menu12.addEventListener("mouseover", function () {
+  console.log("Mouse sobre el div");
+  div2.classList.remove("hover42");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.add("hover12"); // Agrega la clase para cambiar la imagen
+});
+
+menu12.addEventListener("mouseout", function () {
+  console.log("Mouse fuera del div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.remove("hover42"); // Quita la clase para volver a la imagen inicial
+});
+
+menu22.addEventListener("mouseover", function () {
+  console.log("Mouse sobre el div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover42");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.add("hover22"); // Agrega la clase para cambiar la imagen
+});
+
+menu22.addEventListener("mouseout", function () {
+  console.log("Mouse fuera del div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.remove("hover42"); // Quita la clase para volver a la imagen inicial
+});
+
+menu32.addEventListener("mouseover", function () {
+  console.log("Mouse sobre el div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover42");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.add("hover32"); // Agrega la clase para cambiar la imagen
+});
+
+menu32.addEventListener("mouseout", function () {
+  console.log("Mouse fuera del div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.remove("hover42"); // Quita la clase para volver a la imagen inicial
+});
+
+menu42.addEventListener("mouseover", function () {
+  console.log("Mouse sobre el div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.add("hover42"); // Agrega la clase para cambiar la imagen
+});
+
+menu42.addEventListener("mouseout", function () {
+  console.log("Mouse fuera del div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.remove("hover42"); // Quita la clase para volver a la imagen inicial
+});
+
+menu52.addEventListener("mouseover", function () {
+  console.log("Mouse sobre el div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover42");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.add("hover52"); // Agrega la clase para cambiar la imagen
+});
+
+menu52.addEventListener("mouseout", function () {
+  console.log("Mouse fuera del div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.remove("hover42"); // Quita la clase para volver a la imagen inicial
+});
+
+menu62.addEventListener("mouseover", function () {
+  console.log("Mouse sobre el div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover42");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover72");
+  div2.classList.add("hover62"); // Agrega la clase para cambiar la imagen
+});
+
+menu62.addEventListener("mouseout", function () {
+  console.log("Mouse fuera del div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.remove("hover42"); // Quita la clase para volver a la imagen inicial
+});
+
+menu72.addEventListener("mouseover", function () {
+  console.log("Mouse sobre el div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover42");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover52");
+  div2.classList.add("hover72"); // Agrega la clase para cambiar la imagen
+});
+
+menu72.addEventListener("mouseout", function () {
+  console.log("Mouse fuera del div");
+  div2.classList.remove("hover12");
+  div2.classList.remove("hover22");
+  div2.classList.remove("hover32");
+  div2.classList.remove("hover52");
+  div2.classList.remove("hover62");
+  div2.classList.remove("hover72");
+  div2.classList.remove("hover42"); // Quita la clase para volver a la imagen inicial
+});

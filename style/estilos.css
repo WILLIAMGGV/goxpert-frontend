@@ -150,12 +150,15 @@
   right: 0;
   bottom: 0;
   background-image: url("../img/serviceopc/service3.webp");
-  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-size: contain; /* Ahora muestra la imagen completa */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center; /* Centra la imagen */
-  opacity: 0.9; /* Opacidad de la imagen de fondo */
-  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+  opacity: 0.9;
+  z-index: -1;
   transition: background-image 0.3s ease;
+
 }
+
 
 .fondo-servicios.hover1::before {
   background-image: url("../img/serviceopc/service1.webp"); /* Imagen al pasar el mouse */
@@ -211,6 +214,8 @@
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
 
+
+
 .fondo-service1::before {
   content: "";
   position: absolute;
@@ -218,13 +223,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  
   background-image: url("../img/ilustraciones/service1.webp");
-  background-color: var(--bg-lila);
-  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-size: contain; /* Ahora muestra la imagen completa */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center; /* Centra la imagen */
-  opacity: 1; /* Opacidad de la imagen de fondo */
-  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+  opacity: 0.9;
+  z-index: -1;
+  transition: background-image 0.3s ease;
+
 }
 
 .fondo-service2 {
@@ -239,13 +245,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  
   background-image: url("../img/ilustraciones/service2.webp");
-  background-color: var(--bg-lila);
-  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-size: contain; /* Ahora muestra la imagen completa */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center; /* Centra la imagen */
-  opacity: 1; /* Opacidad de la imagen de fondo */
-  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+  opacity: 0.9;
+  z-index: -1;
+  transition: background-image 0.3s ease;
+
 }
 
 
